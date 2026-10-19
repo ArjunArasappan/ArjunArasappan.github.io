@@ -55,7 +55,7 @@ section > h2 { padding: 16px; }
 .company-media img { height: 96px; max-width: 100%; padding: 10px; }
 .experience-role, .experience-advisor, .experience-advisor a { font-weight: 400; }
 .experience-description { font-weight: 400; }
-.experience-description p { margin-top: 5px; }
+.internship-entry p, .experience-description p { margin-top: 0; }
 #contact > p { padding: 0 16px 16px; }
 footer { padding: 20px 16px; color: var(--muted); text-align: right; }
 .writing-header { padding-block: 72px 37px; border-bottom: 1px solid var(--line); margin-bottom: 37px; }

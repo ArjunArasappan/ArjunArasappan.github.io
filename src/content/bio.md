@@ -10,8 +10,8 @@ site:
   portraitImage: /profile-hiking-lake2.png
   writing:
     title: Writing
-    description: Notes on robot learning, embodied intelligence, and ideas in progress.
-    subtitle: Notes... to be updated
+    description: 
+    subtitle:
     backLabel: All writing
 # Set to false to hide company logos and left-align internship text.
 showCompanyLogos: false
@@ -28,13 +28,13 @@ experience:
       name: Yao Hua Ooi
       href: https://scholar.google.com/citations?user=-zheQv4AAAAJ&hl=en
     bullets:
-      - Variants of canonical correlation analysis for cross-asset class trading strategies
+      - Investigated variants of canonical correlation analysis for cross-asset class trading strategies
   - organization: Vanguard Group
     logo: /logos/vanguard.svg
     role: ML Research Intern
     bullets:
-      - Saw firsthand how John Bogle and Vanguard pioneered index investing and democratized wealth management
-      - Investigated plasticity-stability tradeoff for continually-learned trading systems via self-distillation and PCGrad
+      - Studied plasticity-stability tradeoff in continual learning with self-distillation and PCGrad—intruiged by how John Bogle and Vanguard pioneered index investing and democratized wealth management
+
   - organization: Amazon Robotics
     logo: /logos/amazon-robotics.svg
     role: Data Science Intern
