@@ -59,7 +59,7 @@ projects:
       - label: Codebase
         href: https://github.com/ArjunArasappan/fedSSL-research
 teaching:
-  title: Teaching & Coursework
+  title: Teaching & Select Coursework
   coursework:
     - title: CIS 5200 Machine Learning
       role: Recitation TA
