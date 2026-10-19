@@ -43,6 +43,8 @@ section > h2 { padding: 16px; }
 .research-media { padding: 16px; }
 .research-media img { display: block; width: 160px; height: 160px; object-fit: contain; }
 .research-copy { padding: 16px; }
+.teaching-entry { padding: 7px 16px; }
+.teaching-role { font-weight: 400; }
 .project-status { font-weight: 400; }
 .muted, time { color: var(--muted); }
 .internship-entry { line-height: 1.2; }

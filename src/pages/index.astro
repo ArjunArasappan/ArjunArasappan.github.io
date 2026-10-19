@@ -20,6 +20,7 @@ interface Project {
 }
 const projects: Project[] = frontmatter.projects;
 const contact: { title: string; text: string; email: string } = frontmatter.contact;
+const teaching: { title: string; courses: { title: string; role: string }[] } = frontmatter.teaching;
 const showCompanyLogos = frontmatter.showCompanyLogos !== false;
 ---
 <BaseLayout>
@@ -31,7 +32,7 @@ const showCompanyLogos = frontmatter.showCompanyLogos !== false;
           <Bio />
         </div>
       </div>
-      <img class="profile-picture" src="/IMG_6161.jpg" alt={site.portraitAlt} width="1754" height="1739" fetchpriority="high" />
+      <img class="profile-picture" src={site.portraitImage} alt={site.portraitAlt} width="826" height="842" fetchpriority="high" />
     </div>
   </header>
 
@@ -59,6 +60,15 @@ const showCompanyLogos = frontmatter.showCompanyLogos !== false;
         </article>
       ))}
     </div>
+  </section>
+
+  <section id="teaching" aria-labelledby="teaching-heading">
+    <h2 id="teaching-heading">{teaching.title}</h2>
+    {teaching.courses.map(course => (
+      <article class="teaching-entry">
+        <h3>{course.title}<span class="teaching-role"> — {course.role}</span></h3>
+      </article>
+    ))}
   </section>
 
   <section id="contact" aria-labelledby="contact-heading">

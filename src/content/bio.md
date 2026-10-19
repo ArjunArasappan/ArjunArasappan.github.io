@@ -7,6 +7,7 @@ site:
   advisorLabel: advised by
   skipLink: Skip to content
   portraitAlt: Portrait of Arjun Arasappan
+  portraitImage: /profile-hiking-lake2.png
   writing:
     title: Writing
     description: Notes on robot learning, embodied intelligence, and ideas in progress.
@@ -57,6 +58,13 @@ projects:
         href: https://drive.google.com/drive/u/1/folders/13WGsg00K6ndxGAtaoEnJ91lhiupMuA8k
       - label: Codebase
         href: https://github.com/ArjunArasappan/fedSSL-research
+teaching:
+  title: Teaching
+  courses:
+    - title: CIS 5200 Machine Learning
+      role: Recitation TA
+    - title: CIS 5450 Big Data Analytics
+      role: Recitation TA
 contact:
   title: Contact
   text: I love meeting new people and I'm always happy to chat! Reach out at

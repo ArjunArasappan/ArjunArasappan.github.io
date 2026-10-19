@@ -9,6 +9,7 @@ export const site = frontmatter.site as {
   advisorLabel: string;
   skipLink: string;
   portraitAlt: string;
+  portraitImage: string;
   writing: {
     title: string;
     description: string;
