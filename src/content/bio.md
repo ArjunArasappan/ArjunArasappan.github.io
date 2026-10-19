@@ -59,7 +59,7 @@ projects:
         href: https://github.com/ArjunArasappan/fedSSL-research
 contact:
   title: Contact
-  text: Always happy to chat, get in touch at
+  text: I love meeting new people and I'm always happy to chat! Reach out at
   email: arasarjun@gmail.com
 ---
 
