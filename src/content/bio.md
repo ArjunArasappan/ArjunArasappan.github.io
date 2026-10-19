@@ -13,7 +13,7 @@ site:
     subtitle: Notes... to be updated
     backLabel: All writing
 # Set to false to hide company logos and left-align internship text.
-showCompanyLogos: true
+showCompanyLogos: false
 experience:
   - organization: Tesla Optimus
     logo: /logos/tesla.svg
@@ -59,7 +59,7 @@ projects:
         href: https://github.com/ArjunArasappan/fedSSL-research
 contact:
   title: Contact
-  text: I’m always happy to exchange ideas about learning, intelligence, and robotics. Get in touch at
+  text: Always happy to chat, get in touch at
   email: arasarjun@gmail.com
 ---
 
