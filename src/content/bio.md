@@ -33,7 +33,7 @@ experience:
     logo: /logos/vanguard.svg
     role: ML Research Intern
     bullets:
-      - Studied plasticity-stability tradeoff in continual learning with self-distillation and PCGrad—intruiged by how John Bogle and Vanguard pioneered index investing and democratized wealth management
+      - Studied plasticity-stability tradeoff in continual learning with self-distillation and PCGrad—first row seat to how John Bogle and Vanguard pioneered index investing and democratized wealth management
 
   - organization: Amazon Robotics
     logo: /logos/amazon-robotics.svg
@@ -74,6 +74,8 @@ teaching:
     - CIS 2620 Automata, Computability, and Complexity
     - STAT 4300 Probability
     - STAT 4310 Statistical Inference
+    - STAT 4330 Stochastic Processes
+    - STAT 9120 Acceleration and Hedging in Optimization
     - ECON 2310 Econometric Methods and Models
     - MATH 3140 Advanced Linear Algebra
     - MATH 3600 Advanced Calculus

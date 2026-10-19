@@ -66,8 +66,8 @@ const showCompanyLogos = frontmatter.showCompanyLogos !== false;
     <h2 id="teaching-heading">{teaching.title}</h2>
     <ul class="coursework-list">{teaching.coursework.map(entry => {
       const { title, role } = typeof entry === 'string' ? { title: entry, role: undefined } : entry;
-      const level = title.match(/\b([56])\d{3}\b/)?.[1];
-      return <li>{title}{level === '5' ? '*' : level === '6' ? '**' : ''}{role && <> — <em>{role}</em></>}</li>;
+      const level = title.match(/\b([569])\d{3}\b/)?.[1];
+      return <li>{title}{level === '5' ? '*' : level === '6' || level === '9' ? '**' : ''}{role && <> — <em>{role}</em></>}</li>;
     })}</ul>
     <p class="coursework-note muted">* graduate-level &nbsp; ** PhD-level</p>
   </section>
