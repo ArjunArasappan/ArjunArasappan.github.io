@@ -85,11 +85,13 @@ contact:
   email: arasarjun@gmail.com
 ---
 
-I studied Computer Science (BS) and Robotics (MS) at the University of Pennsylvania. My research interests span continual and embodied learning, reward-sensing tradeoffs in RL, and how learning systems relate to human cognition and evolution.
+I studied Computer Science (BS) and Robotics (MS) at the University of Pennsylvania. My research interests span continual and embodied learning, reward-sensing tradeoffs in RL via information bottelnecks, and how learning systems relate to human cognition and evolution.
 
 I've explored these topics across academia and industry—including Penn's [PAL Lab](https://penn-pal-lab.github.io/) advised by [Dinesh Jayaraman](https://www.engineering.upenn.edu/~dineshj/), as well as Tesla Optimus, Amazon Robotics, and Flower Labs. 
 
-I'm an avid squash player, lover of all things mountains, and caretaker to an aggressively needy sourdough starter. In a prior life, I enjoyed competitive robotics and placed at the [2022 VEX Robotics World Championship](https://www.youtube.com/watch?v=vFLr36XWnSg).
+More ambitiously, I’m excited for a future where physical AI makes labor abundant, unlocking work we’ve never been able to afford—from sustainable manufacturing and commoditized construction to cleaning coastlines and streets.
+
+I'm also an avid squash player, lover of all things mountains, and caretaker to an aggressively needy sourdough starter. In a prior life, I enjoyed competitive robotics and placed at the [2022 VEX Robotics World Championship](https://www.youtube.com/watch?v=vFLr36XWnSg).
 
 - [Email](mailto:arasarjun@gmail.com)
 - [LinkedIn](https://www.linkedin.com/in/arjun-arasappan-35b096201/)
