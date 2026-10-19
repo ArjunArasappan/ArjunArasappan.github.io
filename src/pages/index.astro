@@ -20,7 +20,7 @@ interface Project {
 }
 const projects: Project[] = frontmatter.projects;
 const contact: { title: string; text: string; email: string } = frontmatter.contact;
-const teaching: { title: string; courses: { title: string; role: string }[] } = frontmatter.teaching;
+const teaching: { title: string; coursework: (string | { title: string; role?: string })[] } = frontmatter.teaching;
 const showCompanyLogos = frontmatter.showCompanyLogos !== false;
 ---
 <BaseLayout>
@@ -64,11 +64,12 @@ const showCompanyLogos = frontmatter.showCompanyLogos !== false;
 
   <section id="teaching" aria-labelledby="teaching-heading">
     <h2 id="teaching-heading">{teaching.title}</h2>
-    {teaching.courses.map(course => (
-      <article class="teaching-entry">
-        <h3>{course.title}<span class="teaching-role"> — {course.role}</span></h3>
-      </article>
-    ))}
+    <ul class="coursework-list">{teaching.coursework.map(entry => {
+      const { title, role } = typeof entry === 'string' ? { title: entry, role: undefined } : entry;
+      const level = title.match(/\b([56])\d{3}\b/)?.[1];
+      return <li>{title}{level === '5' ? '*' : level === '6' ? '**' : ''}{role && <> — <em>{role}</em></>}</li>;
+    })}</ul>
+    <p class="coursework-note muted">* graduate-level &nbsp; ** PhD-level</p>
   </section>
 
   <section id="contact" aria-labelledby="contact-heading">

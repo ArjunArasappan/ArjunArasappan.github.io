@@ -100,3 +100,5 @@ footer { padding: 20px 16px; color: var(--muted); text-align: right; }
   h1 { font-size: 28px; }
   .profile-picture { width: calc(100% - 16px); margin: 8px; }
 }
+.coursework-list { margin: 0; padding: 0 16px 7px 36px; }
+.coursework-note { padding: 0 16px; margin: 0; font-size: 0.9em; }

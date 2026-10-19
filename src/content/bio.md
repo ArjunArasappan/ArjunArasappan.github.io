@@ -59,12 +59,24 @@ projects:
       - label: Codebase
         href: https://github.com/ArjunArasappan/fedSSL-research
 teaching:
-  title: Teaching
-  courses:
+  title: Teaching & Coursework
+  coursework:
     - title: CIS 5200 Machine Learning
       role: Recitation TA
     - title: CIS 5450 Big Data Analytics
       role: Recitation TA
+    - CIS 6200 Advanced Topics in Machine Learning
+    - CIS 6250 Theory of Machine Learning
+    - CIS 6800 Advanced Topics in Machine Perception
+    - ESE 6050 Modern Convex Optimization
+    - MEAM 5170 Control and Optimization with Applications in Robotics
+    - CIS 5020 Analysis of Algorithms
+    - CIS 2620 Automata, Computability, and Complexity
+    - STAT 4300 Probability
+    - STAT 4310 Statistical Inference
+    - ECON 2310 Econometric Methods and Models
+    - MATH 3140 Advanced Linear Algebra
+    - MATH 3600 Advanced Calculus
 contact:
   title: Contact
   text: I love meeting new people and I'm always happy to chat! Reach out at
