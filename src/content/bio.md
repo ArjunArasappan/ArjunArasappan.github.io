@@ -1,0 +1,74 @@
+---
+site:
+  name: Arjun Arasappan
+  description: Research interests in robot learning, embodied intelligence, and continual learning.
+  projectsHeading: Research Projects
+  experienceHeading: Industry Experience
+  advisorLabel: advised by
+  skipLink: Skip to content
+  portraitAlt: Portrait of Arjun Arasappan
+  writing:
+    title: Writing
+    description: Notes on robot learning, embodied intelligence, and ideas in progress.
+    subtitle: Notes... to be updated
+    backLabel: All writing
+# Set to false to hide company logos and left-align internship text.
+showCompanyLogos: true
+experience:
+  - organization: Tesla Optimus
+    logo: /logos/tesla.svg
+    role: Research Engineer
+    bullets:
+      -  World models with neural dynamics for humanoid robots
+  - organization: Capula
+    logo: /logos/capula.svg
+    role: Quant Research Intern, Global Systematic Desk
+    advisor:
+      name: Yao Hua Ooi
+      href: https://scholar.google.com/citations?user=-zheQv4AAAAJ&hl=en
+    bullets:
+      - Variants of canonical correlation analysis for cross-asset class trading strategies
+  - organization: Vanguard Group
+    logo: /logos/vanguard.svg
+    role: ML Research Intern
+    bullets:
+      - Saw firsthand how John Bogle and Vanguard pioneered index investing and democratized wealth management
+      - Investigated plasticity-stability tradeoff for continually-learned trading systems via self-distillation and PCGrad
+  - organization: Amazon Robotics
+    logo: /logos/amazon-robotics.svg
+    role: Data Science Intern
+    bullets:
+      - Information Retrieval and Search
+  - organization: Flower Labs
+    logo: /logos/flower.svg
+    role: Research Intern
+    bullets:
+      - Leveraged Latent Space Isometries for Lightweight Eval Metrics for Self-Supervised Visual Learning
+projects:
+  - title: Inference-Time Robustness-Reward Tradeoffs in RL Policies via Information Bottlenecks
+    status: work in progress
+    image: /masters-thesis.png
+    description: Master's Thesis
+  - title: Lightweight Evaluation Metric for Self-Supervised Federated Learning Models
+    image: /fedssl.png
+    description: ''
+    links:
+      - label: Paper
+        href: https://drive.google.com/drive/u/1/folders/13WGsg00K6ndxGAtaoEnJ91lhiupMuA8k
+      - label: Codebase
+        href: https://github.com/ArjunArasappan/fedSSL-research
+contact:
+  title: Contact
+  text: I’m always happy to exchange ideas about learning, intelligence, and robotics. Get in touch at
+  email: arasarjun@gmail.com
+---
+
+I studied Computer Science (BS) and Robotics (MS) at the University of Pennsylvania. My research interests span continual and embodied learning, reward-sensing tradeoffs in RL, and how learning systems relate to human cognition and evolution.
+
+I've explored these topics across academia and industry—including Penn's [PAL Lab](https://penn-pal-lab.github.io/) advised by [Dinesh Jayaraman](https://www.engineering.upenn.edu/~dineshj/), as well as Tesla Optimus, Amazon Robotics, and Flower Labs. 
+
+I'm an avid squash player, lover of all things mountains, and caretaker to an aggressively needy sourdough starter. In a prior life, I enjoyed competitive robotics and placed at the [2022 VEX Robotics World Championship](https://www.youtube.com/watch?v=vFLr36XWnSg).
+
+- [Email](mailto:arasarjun@gmail.com)
+- [LinkedIn](https://www.linkedin.com/in/arjun-arasappan-35b096201/)
+- [X](https://x.com/arjaras0)

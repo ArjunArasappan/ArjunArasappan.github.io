@@ -1,0 +1,68 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { site } from '../data/site';
+import { Content as Bio, frontmatter } from '../content/bio.md';
+
+interface Experience {
+  organization: string;
+  logo: string;
+  role: string;
+  bullets: string[];
+  advisor?: { name: string; href: string };
+}
+const experience: Experience[] = frontmatter.experience;
+interface Project {
+  title: string;
+  status?: string;
+  image?: string;
+  description?: string;
+  links?: { label: string; href: string }[];
+}
+const projects: Project[] = frontmatter.projects;
+const contact: { title: string; text: string; email: string } = frontmatter.contact;
+const showCompanyLogos = frontmatter.showCompanyLogos !== false;
+---
+<BaseLayout>
+  <header class="hero">
+    <div class="hero-heading">
+      <div class="hero-intro">
+        <h1>{site.name}</h1>
+        <div class="bio overview-copy">
+          <Bio />
+        </div>
+      </div>
+      <img class="profile-picture" src="/IMG_6161.jpg" alt={site.portraitAlt} width="1754" height="1739" fetchpriority="high" />
+    </div>
+  </header>
+
+  <section id="projects" aria-labelledby="projects-heading">
+    <h2 id="projects-heading">{site.projectsHeading}</h2>
+    {projects.map(entry => <article class="entry research-entry">
+      <div class="research-media" aria-hidden="true">{entry.image && <img src={entry.image} alt="" width="160" height="160" loading="lazy" />}</div>
+      <div class="research-copy"><h3>{entry.links?.[0] ? <a href={entry.links[0].href}>{entry.title}</a> : entry.title}{entry.status && <> <em class="project-status">[{entry.status}]</em></>}</h3>{entry.description && <p>{entry.description}</p>}{entry.links && <ul class="inline-links">{entry.links.map(link => <li><a href={link.href}>{link.label}</a></li>)}</ul>}</div>
+    </article>)}
+  </section>
+
+  <section id="experience" aria-labelledby="experience-heading">
+    <h2 id="experience-heading">{site.experienceHeading}</h2>
+    <div id="experience-list" class="experience-list">
+      {experience.map(item => (
+        <article class:list={['entry', 'research-entry', 'internship-entry', { 'without-logo': !showCompanyLogos }]}>
+          {showCompanyLogos && <div class="research-media company-media"><img src={item.logo} alt={`${item.organization} logo`} width="160" height="96" loading="lazy" /></div>}
+          <div class="research-copy">
+          <h3 class="experience-heading">
+            <span>{item.organization}</span>
+          </h3>
+          <p class="experience-role"><em>{item.role}</em>{item.advisor && <span class="experience-advisor"> ({site.advisorLabel} <a href={item.advisor.href}>{item.advisor.name}</a>)</span>}</p>
+          <div class="experience-description">{item.bullets.map(text => <p>{text}</p>)}</div>
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section id="contact" aria-labelledby="contact-heading">
+    <h2 id="contact-heading">{contact.title}</h2>
+    <p>{contact.text} <a href={`mailto:${contact.email}`}>{contact.email}</a>.</p>
+  </section>
+</BaseLayout>
